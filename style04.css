@@ -1,0 +1,245 @@
+
+body {
+    
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f3f4f6, #e2e2e2);
+    color: #333;
+    
+    
+    line-height: 1.6;
+}
+
+a {
+   
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4 {
+    
+    margin: 0;
+}
+
+
+.header {
+    
+    background: linear-gradient(135deg, #6C63FF, #3F3D56);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.nav {
+    
+    background-color: #4A47A3;
+    padding: 10px 0;
+}
+
+.nav ul {
+    
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    
+    margin: 0 15px;
+}
+
+.nav a {
+    
+    color: #fff;
+    font-weight: 400;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav a:hover {
+    
+    background-color: #807AD7;
+    border-radius: 5px;
+    color: #fff;
+}
+
+
+#hero {
+    
+    background: grey;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#hero::before {
+    
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#hero h2 {
+    
+    position: relative;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#hero p {
+    
+    position: relative;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #ddd;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#hero button {
+    
+    position: relative;
+    background-color: #6C63FF;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#hero button:hover {
+   
+    background-color: #4A47A3;
+    transform: scale(1.05);
+}
+
+
+#highlights {
+   
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#highlights h3 {
+    
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #6C63FF;
+}
+
+.destinations {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.destination {
+    
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 500px;
+}
+
+.destination:hover {
+    
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.destination img {
+    
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.destination h4 {
+    
+    font-size: 22px;
+    font-weight: 600;
+    margin: 10px 0;
+    padding: 0 10px;
+    color: #333;
+}
+
+.destination p {
+   
+    font-size: 16px;
+    padding: 0 10px 10px;
+    color: #666;
+}
+
+.services {
+    
+    padding: 60px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.services h3 {
+   
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #6C63FF;
+}
+
+.service img {
+    
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service img:hover {
+   
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+footer {
+    
+    background: #2a5298;
+    color: #fff;
+    text-align: center;
+    padding: 15px 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    
+    margin: 0;
+    font-weight: 500;
+    font-size: 1rem;
+}

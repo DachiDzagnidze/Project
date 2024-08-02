@@ -1,0 +1,133 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f3f4f6, #e2e2e2);
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #6C63FF, #3F3D56);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation */
+.nav {
+    background-color: #4A47A3;
+    padding: 10px 0;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    margin: 0 15px;
+}
+
+.nav a {
+    color: #fff;
+    font-weight: 400;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: #807AD7;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Services Section */
+.services {
+    padding: 60px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.services h3 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #6C63FF;
+}
+
+.service {
+    margin: 20px auto;
+    max-width: 800px; /* Center the service boxes and limit their width */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service h4 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.service img {
+    width: 80%; /* Make images smaller */
+    max-width: 400px; /* Set a maximum width */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service p {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+    background: #2a5298;
+    color: #fff;
+    text-align: center;
+    padding: 15px 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 1rem;
+}

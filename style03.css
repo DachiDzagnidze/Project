@@ -1,0 +1,179 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: #f4f4f9;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+.header {
+    background: linear-gradient(135deg, #6C63FF, #3F3D56);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    
+}
+
+
+header h1 {    
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+.nav {
+    background: #4A47A3;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure nav is always on top */
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.nav li {
+    margin: 0 15px; /* Adjusted margin for better spacing */
+}
+
+.nav a {
+    color: #fff;
+    font-weight: 500;
+    padding: 12px 18px; /* Adjusted padding */
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.auth-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.auth-container h2 {
+    color: #2a5298;
+    margin-bottom: 20px;
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container label {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.auth-container input[type="text"],
+.auth-container input[type="email"],
+.auth-container input[type="password"] {
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.auth-container input[type="text"]:focus,
+.auth-container input[type="email"]:focus,
+.auth-container input[type="password"]:focus {
+    border-color: #2a5298;
+    outline: none; /* Remove default outline */
+}
+
+.auth-container button {
+    padding: 15px;
+    margin: 20px 0;
+    background: linear-gradient(135deg, #6C63FF, #3F3D56);
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.auth-container button:hover {
+    background: #4A47A3;
+    transform: translateY(-2px);
+}
+
+.auth-container .auth-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.auth-container .auth-links a {
+    color: #2a5298;
+    transition: color 0.3s ease;
+}
+
+.auth-container .auth-links a:hover {
+    color: #4A47A3;
+}
+
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .auth-container {
+        padding: 1.5rem;
+    }
+
+    .auth-container button {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+}
+
+
+
