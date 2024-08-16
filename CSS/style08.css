@@ -1,4 +1,4 @@
-/* Global Styles */
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -17,7 +17,7 @@ h1, h2, h3, h4 {
     margin: 0;
 }
 
-/* Header */
+/* ჰეადერი */
 .header {
     background: linear-gradient(135deg, #6C63FF, #3F3D56);
     padding: 20px 0;
@@ -31,7 +31,7 @@ h1, h2, h3, h4 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Navigation */
+/* ნავიგაცია */
 .nav {
     background-color: #4A47A3;
     padding: 10px 0;
@@ -62,12 +62,12 @@ h1, h2, h3, h4 {
     color: #fff;
 }
 
-/* Main Content */
+/* მთავარი შინაარსი */
 main {
     padding: 20px;
 }
 
-/* Services Section */
+/* სერვისების ნაწილი */
 .services {
     padding: 60px 20px;
     background-color: #f0f0f0;
@@ -83,7 +83,7 @@ main {
 
 .service {
     margin: 20px auto;
-    max-width: 800px; /* Center the service boxes and limit their width */
+    max-width: 800px; 
     padding: 20px;
     background-color: #ffffff;
     border-radius: 10px;
@@ -98,8 +98,8 @@ main {
 }
 
 .service img {
-    width: 80%; /* Make images smaller */
-    max-width: 400px; /* Set a maximum width */
+    width: 80%; /* სურათების შემცირება */
+    max-width: 400px; /* მაქსიმალური სიგანის დასადგენი */
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -117,7 +117,7 @@ main {
     margin-top: 10px;
 }
 
-/* Footer */
+/*ფუტერი*/
 .footer {
     background: #2a5298;
     color: #fff;

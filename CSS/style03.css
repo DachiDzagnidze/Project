@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -15,23 +16,22 @@ h1, h2, h3, h4 {
     margin: 0;
 }
 
+/** ჰეადერი*/
 .header {
     background: linear-gradient(135deg, #6C63FF, #3F3D56);
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     width: 100%;
-    
 }
-
 
 header h1 {    
     color: #fff;
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-
 }
 
+/** ნავიგაცია */
 .nav {
     background: #4A47A3;
     padding: 10px 0;
@@ -42,7 +42,7 @@ header h1 {
     width: 100%;
     position: sticky;
     top: 0;
-    z-index: 1000; /* Ensure nav is always on top */
+    z-index: 1000; /*! დარწმუნდით, რომ ნავიგაცია ყოველთვის ზედაპირზეა */
 }
 
 .nav ul {
@@ -55,13 +55,13 @@ header h1 {
 }
 
 .nav li {
-    margin: 0 15px; /* Adjusted margin for better spacing */
+    margin: 0 15px; 
 }
 
 .nav a {
     color: #fff;
     font-weight: 500;
-    padding: 12px 18px; /* Adjusted padding */
+    padding: 12px 18px; 
     border-radius: 8px;
     text-decoration: none;
 }
@@ -71,6 +71,7 @@ header h1 {
     color: #fff;
 }
 
+/** მთავარი contenti */
 main {
     padding: 20px;
     flex: 1;
@@ -80,6 +81,7 @@ main {
     flex-direction: column;
 }
 
+/** ავტორიზაციის კონტეინერი */
 .auth-container {
     background: #fff;
     padding: 2rem;
@@ -105,6 +107,7 @@ main {
     font-weight: 600;
 }
 
+/*!ეს არის  auth-container input  რომელიც ნიშნავს ყველა inputs და აკეტებს მის ვიზუალურ მხარეს */
 .auth-container input[type="text"],
 .auth-container input[type="email"],
 .auth-container input[type="password"] {
@@ -120,7 +123,7 @@ main {
 .auth-container input[type="email"]:focus,
 .auth-container input[type="password"]:focus {
     border-color: #2a5298;
-    outline: none; /* Remove default outline */
+    outline: none; /* ჩამოწერილი მარგინების ამოღება */
 }
 
 .auth-container button {
@@ -156,6 +159,7 @@ main {
     color: #4A47A3;
 }
 
+/** მედია მოთხოვნები */
 @media (max-width: 768px) {
     .hero h2 {
         font-size: 2.5rem;
@@ -174,6 +178,5 @@ main {
         font-size: 0.9rem;
     }
 }
-
 
 

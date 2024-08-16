@@ -1,82 +1,69 @@
-/* General Styles */
+
 body {
-    
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; /* შრიფტი */
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #f3f4f6, #e2e2e2);
+    /*! ფონის ხარისხი: ლინარური გრადიენტი, რომელიც იწყება 135 გრადუსით და გადადის კონკრეტული ფერიდან კონკრეტულ ფერში */
+    background: linear-gradient(135deg, #f3f4f6, #e2e2e2); 
     color: #333;
-    
-    
-    line-height: 1.6;
+    line-height: 1.6; /* ხაზების სიმაღლე */
 }
 
 a {
-   
-    text-decoration: none;
-    color: inherit;
+    text-decoration: none; /* ხაზის მოხსნა */
+    color: inherit; /* ფერი */
 }
 
 h1, h2, h3, h4 {
-    
-    margin: 0;
+    margin: 0; /* ზღვარი */
 }
 
-
+/** ჰედერი */
 .header {
-    
-    background: linear-gradient(135deg, #6C63FF, #3F3D56);
+    background: linear-gradient(135deg, #6C63FF, #3F3D56); /* ფონის გრადიენტი */
     padding: 20px 0;
     text-align: center;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* ჩრდილი */
 }
 
 .header h1 {
-    
-    color: #fff;
-    font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff; /* ფერი */
+    font-weight: 700; /* სისქე */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* ჩრდილი */
 }
 
-
+/** ნავიგაცია */
 .nav {
-    
     background-color: #4A47A3;
     padding: 10px 0;
 }
 
 .nav ul {
-    
-    list-style: none;
+    list-style: none; /* სია */
     display: flex;
-    justify-content: center;
+    justify-content: center; /* ცენტრი */
     padding: 0;
     margin: 0;
 }
 
 .nav li {
-    
     margin: 0 15px;
 }
 
 .nav a {
-    
     color: #fff;
-    font-weight: 400;
+    font-weight: 400; /* სისქე */
     padding: 10px 15px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease; /* გადასვლა */
 }
 
 .nav a:hover {
-    
-    background-color: #807AD7;
+    background-color: #807AD7; /* ჰოვერი */
     border-radius: 5px;
-    color: #fff;
 }
 
-
+/** hero სექცია */
 #hero {
-    
     background: url('https://images.unsplash.com/photo-1574837074543-ff6a966fdcfd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTR8ajhzZTN0QVliRWN8fGVufDB8fHx8&w=1000&q=80') no-repeat center center/cover;
     background-position: down 10px;
     color: #fff;
@@ -85,82 +72,83 @@ h1, h2, h3, h4 {
     position: relative;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
+/**  #hero ელემენტისთვის pseudo-ელემენტი ::before */
 #hero::before {
-    
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.4);
+    content: ""; /* მინიმალური შინაარსი (ცარიელი) */
+    position: absolute; /* absolute პოზიციონირება */
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background: rgba(0, 0, 0, 0.4); /* ფონის სიბნელე  */
 }
 
+/* #hero h2 სტილი */
 #hero h2 {
-    
-    position: relative;
-    font-size: 42px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative; /* relative პოზიციონირება */
+    font-size: 42px; /* ტექსტის ზომა */
+    font-weight: 700; 
+    margin-bottom: 10px; 
+    color: #fff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* ტექსტის ჩრდილი  */
 }
 
+/* #hero p სტილი */
 #hero p {
-    
-    position: relative;
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #ddd;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    position: relative; /* relative პოზიციონირება */
+    font-size: 20px; 
+    margin-bottom: 20px; 
+    color: #ddd; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* ტექსტის ჩრდილი  */
 }
 
+/* #hero button სტილი */
 #hero button {
-    
-    position: relative;
-    background-color: #6C63FF;
-    color: #fff;
-    border: none;
-    padding: 15px 30px;
-    font-size: 18px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative; /* relative პოზიციონირება */
+    background-color: #6C63FF; /* ღილაკის ფონური ფერი  */
+    color: #fff; 
+    border: none; /* საზღვრების არარსებობა */
+    padding: 15px 30px; 
+    font-size: 18px; 
+    border-radius: 5px; /* კუთხეების გამრგვალება */
+    cursor: pointer; /* მაუსის კურსორის ცვლილება */
+    /*! ფონური ფერის ცვლილება და ტრანსფორმაციის ცვლილება 0.3 წამით, სუფთად შეცვლილი ფუნქციით. */
+    /*! ეს ნიშნავს, რომ როდესაც ფონური ფერი ან ტრანსფორმაციის თვისებები იცვლება, 
+    /*! ეს ცვლილებები ნაზად და თანაბრად გადაიზრდება 0.3 წამში.  */
+
+    transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
+/* #hero button_hover სტილი */
 #hero button:hover {
-   
-    background-color: #4A47A3;
-    transform: scale(1.05);
+    background-color: #4A47A3; /* ღილაკის ფონური ფერი */
+    transform: scale(1.05); /* გაფართოება */
 }
 
 
+/** მთავარი პუნქტები */
 #highlights {
-   
     padding: 60px 20px;
     background-color: #fff;
     text-align: center;
 }
 
 #highlights h3 {
-    
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 40px;
     color: #6C63FF;
 }
 
+/* მიმართულებები */
 .destinations {
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 20px; /* დაშორება */
 }
 
 .destination {
-    
     background-color: #ffffff;
     border-radius: 10px;
     overflow: hidden;
@@ -170,20 +158,17 @@ h1, h2, h3, h4 {
 }
 
 .destination:hover {
-    
     transform: translateY(-10px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .destination img {
-    
     width: 100%;
     height: 150px;
-    object-fit: cover;
+    object-fit: cover; /* სურათის ზომა */
 }
 
 .destination h4 {
-    
     font-size: 22px;
     font-weight: 600;
     margin: 10px 0;
@@ -192,21 +177,19 @@ h1, h2, h3, h4 {
 }
 
 .destination p {
-   
     font-size: 16px;
     padding: 0 10px 10px;
     color: #666;
 }
 
+/** სერვისები */
 .services {
-    
     padding: 60px 20px;
     background-color: #f0f0f0;
     text-align: center;
 }
 
 .services h3 {
-   
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 40px;
@@ -214,23 +197,24 @@ h1, h2, h3, h4 {
 }
 
 .service img {
-    
     width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+/* !transform 0.3s ease - ეს ნაწილი განსაზღვრავს ტრანსფორმაციის ცვლილებას, რომელიც გაგრძელდება 0.3 წამი და იქნება 'ease' ფუნქციით 
+/*!(box-shadow 0.3s ease) - აქ კი იგივე ხდება ჩრდილისთვის, 0.3 წამი და 'ease' ფუნქცია*/
+
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service img:hover {
-   
     transform: scale(1.05);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-
+/** ფუტერი */
 footer {
-    
     background: #2a5298;
     color: #fff;
     text-align: center;
@@ -239,7 +223,6 @@ footer {
 }
 
 footer p {
-    
     margin: 0;
     font-weight: 500;
     font-size: 1rem;

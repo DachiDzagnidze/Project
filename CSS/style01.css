@@ -1,4 +1,4 @@
-/* Global Styles */
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -17,7 +17,7 @@ h1, h2, h3, h4 {
     margin: 0;
 }
 
-/* Header Styles */
+/** ჰედერის სტილები */
 .header {
     background: linear-gradient(135deg, #6C63FF, #3F3D56);
     padding: 20px 0;
@@ -31,7 +31,7 @@ h1, h2, h3, h4 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Navigation Styles */
+/** ნავიგაციის სტილები */
 .nav {
     background: #4A47A3;
     padding: 10px 0;
@@ -62,7 +62,7 @@ h1, h2, h3, h4 {
     color: #fff;
 }
 
-/* About Us Section Styles */
+/** ჩვენს შესახებ სექციის სტილები */
 .about-us {
     padding: 80px 20px;
     background: #fff;
@@ -123,7 +123,15 @@ h1, h2, h3, h4 {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
 
-/* Footer Styles */
+/** ფუტერის სტილები */
+footer {
+    background: #2a5298;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+/** ფუტერის სტილები */
 footer {
     background: #2a5298;
     color: #fff;
@@ -141,6 +149,7 @@ footer p {
     font-size: 1rem;
 }
 
+/** ჰტმლ და ბოდის სტილები */
 html, body {
     height: 100%;
     margin: 0;
@@ -148,36 +157,11 @@ html, body {
     flex-direction: column;
 }
 
-
 main {
     flex: 1;
+    padding-bottom: 60px; /* ფუტერის სივრცე */
 }
 
-
-footer {
-    background: #2a5298;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
-    width: 100%;
-}
-
-/* Ensure the body and html take full height */
-html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Allow main content to expand and provide space for footer */
-main {
-    flex: 1;
-    padding-bottom: 60px; /* Provide space for footer */
-}
-
-/* Footer Styles */
 footer {
     background: #2a5298;
     color: #fff;

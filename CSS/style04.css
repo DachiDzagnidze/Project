@@ -1,4 +1,5 @@
 
+
 body {
     
     font-family: 'Poppins', sans-serif;
@@ -22,7 +23,7 @@ h1, h2, h3, h4 {
     margin: 0;
 }
 
-
+/* ჰეადერი */
 .header {
     
     background: linear-gradient(135deg, #6C63FF, #3F3D56);
@@ -149,6 +150,7 @@ h1, h2, h3, h4 {
     margin-bottom: 40px;
     color: #6C63FF;
 }
+
 
 .destinations {
     

@@ -1,4 +1,5 @@
-/* General Styles */
+
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -17,7 +18,7 @@ h1, h2, h3, h4 {
     margin: 0;
 }
 
-/* Header Styles */
+/** header სტილები */
 .header {
     background: linear-gradient(135deg, #6C63FF, #3F3D56);
     padding: 20px 0;
@@ -31,7 +32,7 @@ h1, h2, h3, h4 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Navigation Styles */
+/** ნავიგაციის სტილები */
 .nav {
     background-color: #4A47A3;
     padding: 10px 0;
@@ -62,7 +63,7 @@ h1, h2, h3, h4 {
     color: #fff;
 }
 
-/* Hero Section Styles */
+/** hero სექციის სტილები */
 #hero {
     background: url('hero-background.jpg') no-repeat center center/cover;
     color: #fff;
@@ -116,7 +117,7 @@ h1, h2, h3, h4 {
     transform: scale(1.05);
 }
 
-/* Gallery Styles */
+/** გალერეის სტილები */
 #gallery {
     padding: 60px 20px;
     background-color: #f0f0f0;
@@ -162,7 +163,7 @@ h1, h2, h3, h4 {
     object-fit: cover;
 }
 
-/* Highlights Section Styles */
+/** hilightebis სტილები */
 #highlights {
     padding: 60px 20px;
     background-color: #fff;
@@ -176,7 +177,7 @@ h1, h2, h3, h4 {
     color: #6C63FF;
 }
 
-/* Destinations Styles */
+/** destinations სტილები */
 .destinations {
     display: flex;
     flex-wrap: wrap;
@@ -218,7 +219,7 @@ h1, h2, h3, h4 {
     color: #666;
 }
 
-/* Services Section Styles */
+/** მომსახურების სტილები */
 .services {
     padding: 60px 20px;
     background-color: #f0f0f0;
@@ -245,7 +246,7 @@ h1, h2, h3, h4 {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Footer Styles */
+/** ფუტერის სტილები */
 footer {
     background: #2a5298;
     color: #fff;
