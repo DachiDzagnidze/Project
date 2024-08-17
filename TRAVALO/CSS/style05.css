@@ -1,102 +1,102 @@
 
 body {
     font-family: 'Poppins', sans-serif; 
-    margin: 0; /* უამაროს შინაარსს მარჟას */
-    padding: 0; /* უამაროს შინაარსს padding-ი */
-    color: #333; /* ტექსტის ფერი */
-    display: flex; /* იყენებს flexbox-ს განლაგებისთვის */
-    flex-direction: column; /* მოაწესრიგებს შვილებს სვეტურად */
-    align-items: center; /* ჰორიზონტალურად აჯავშავს შვილებს ცენტრში */
-    min-height: 100vh; /* უზრუნველყოფს, რომ body იყოს მინიმუმ მთელი ნახვის სიმაღლე */
-    width: 100%; /* სრული სიგანე viewport-ის */
+    margin: 0; 
+    padding: 0; 
+    color: #333; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    min-height: 100vh; 
+    width: 100%; 
 }
 
 /* სტილები სათაურებისთვის */
 h1, h2, h3, h4 {
-    color: white; /* სათაურების ტექსტის ფერი */
-    margin: 0; /* ამოიღებს ნაგულისხმევი მარგინს */
+    color: white; 
+    margin: 0; 
 }
 
 /* სტილები სათაურისათვის */
 .header {
-    background: linear-gradient(135deg, #6C63FF, #3F3D56); /* გრადენტული ფონური ფერი */
-    padding: 12px 0; /* ვერტიკალური padding */
-    text-align: center; /* ტექსტის ცენტრირება */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* ჩრდილის ეფექტი */
-    width: 100%; /* სრული სიგანე viewport-ის */
+    background: linear-gradient(135deg, #6C63FF, #3F3D56);
+    padding: 12px 0; 
+    text-align: center; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+    width: 100%; 
 }
 
 /* სტილები ნავიგაციის ბარისთვის */
 .nav {
-    background: #4A47A3; /* ფონური ფერი */
-    padding: 10px 0; /* ვერტიკალური padding */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ჩრდილის ეფექტი */
-    display: flex; /* იყენებს flexbox-ს განლაგებისთვის */
-    justify-content: center; /* ჰორიზონტალურად აჯავშავს ელემენტებს ცენტრში */
-    align-items: center; /* ვერტიკალურად აჯავშავს ელემენტებს ცენტრში */
-    width: 100%; /* სრული სიგანე viewport-ის */
+    background: #4A47A3; 
+    padding: 10px 0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
     position: sticky; /* რჩება viewport-ის ზედა ნაწილში */
     top: 0; /* მოაწესრიგებს viewport-ის ზედა ნაწილზე */
 }
 
 /* სტილები ნავიგაციის სიაში */
 .nav ul {
-    list-style: none; /* ამოიღებს ნაგულისხმევი სიების სტილს */
-    display: flex; /* იყენებს flexbox-ს განლაგებისთვის */
-    justify-content: center; /* ჰორიზონტალურად აჯავშავს ელემენტებს ცენტრში */
-    padding: 0; /* ამოიღებს ნაგულისხმევი padding-ი */
-    margin: 0; /* ამოიღებს ნაგულისხმევი მარგინს */
-    width: 100%; /* სრული სიგანე viewport-ის */
+    list-style: none; 
+    display: flex; 
+    justify-content: center; 
+    padding: 0;
+    margin: 0; 
+    width: 100%; 
 }
 
 /* სტილები ნავიგაციის ელემენტებისათვის */
 .nav li {
-    margin: 0 20px; /* ჰორიზონტალური მარგინები ელემენტებს შორის */
+    margin: 0 20px; 
 }
 
 /* სტილები ნავიგაციის ლინკებისთვის */
 .nav a {
     color: #fff; /* ლინკების ტექსტის ფერი */
-    font-weight: 500; /* საშუალო ფონტის წონა */
-    padding: 12px 20px; /* padding-ი ლინკებისთვის */
-    border-radius: 8px; /* კუთხეების რბილი რადიუსი */
-    text-decoration: none; /* ხაზგასმა გამოტოვება */
+    font-weight: 500; 
+    padding: 12px 20px;
+    border-radius: 8px; 
+    text-decoration: none; 
 }
 
 /* სტილები ლინკებზე, როდესაც მასზე მაუსი გადადის */
 .nav a:hover {
-    background: rgba(255, 255, 255, 0.2); /* ფონური ფერი მაუსზე გადასვლისას */
-    color: #fff; /* ტექსტის ფერი მაუსზე გადასვლისას */
+    background: rgba(255, 255, 255, 0.2); 
+    color: #fff;
 }
 
 /* სტილები კონტეინერისთვის */
 .container {
-    padding: 20px; /* padding-ი კონტეინერის შიდა სივრცისთვის */
-    width: 100%; /* სრული სიგანე viewport-ის */
-    max-width: 1200px; /* მაქსიმალური სიგანე */
-    display: flex; /* იყენებს flexbox-ს განლაგებისთვის */
-    flex-direction: column; /* მოაწესრიგებს შვილებს სვეტურად */
-    gap: 20px; /* შუალედი ელემენტებს შორის */
+    padding: 20px;
+    width: 100%; 
+    max-width: 1200px; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px; 
 }
 
 /* სტილები კონტაქტის ინფო, კონტაქტის ფორმა, რუკა და დამატებითი ინფორმაცია */
 .contact-info, .contact-form, .map, .additional-info {
-    background: #fff; /* ფონური ფერი */
-    padding: 2rem; /* padding-ი ელემენტებისთვის */
-    border-radius: 12px; /* კუთხეების რბილი რადიუსი */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* ჩრდილის ეფექტი */
-    width: 100%; /* სრული სიგანე */
+    background: #fff; 
+    padding: 2rem; 
+    border-radius: 12px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+    width: 100%; 
 }
 
 /* სტილები კონტაქტის ინფო და დამატებითი ინფორმაციის სათაურებისთვის */
 .contact-info h2, .contact-form h2, .map h2, .additional-info h2 {
-    color: #2a5298; /* სათაურების ფერი */
-    margin-bottom: 20px; /* ქვედა მარგინი */
+    color: #2a5298; 
+    margin-bottom: 20px; 
 }
 
 /* სტილები კონტაქტის ინფო და დამატებითი ინფორმაციის ტექსტისთვის */
 .contact-info p, .additional-info p {
-    margin: 10px 0; /* ზედა და ქვედა მარგინი */
+    margin: 10px 0; 
 }
 
 /* სტილები კონტაქტის ინფო და დამატებითი ინფორმაციის ლინკებისთვის */
@@ -110,46 +110,46 @@ h1, h2, h3, h4 {
     color: #4A47A3; /* ლინკების ფერი მაუსზე გადასვლისას */
 }
 
-/* სტილები კონტაქტის ფორმისათვის */
+
 .contact-form form {
-    display: flex; /* იყენებს flexbox-ს განლაგებისთვის */
-    flex-direction: column; /* მოაწესრიგებს შვილებს სვეტურად */
+    display: flex; 
+    flex-direction: column; 
 }
 
-/* სტილები კონტაქტის ფორმის ლეიბლებზე */
+
 .contact-form label {
-    margin-bottom: 5px; /* ქვედა მარგინი */
+    margin-bottom: 5px; 
 }
 
 /* სტილები ტექსტური ველებისა და ტექსტური არეალებისათვის კონტაქტის ფორმაში */
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-    padding: 12px 15px; /* padding-ი */
-    margin: 10px 0; /* ზედა და ქვედა მარგინი */
-    border: 1px solid #ddd; /* საზღვრების ფერი */
-    border-radius: 8px; /* კუთხეების რბილი რადიუსი */
-    font-size: 1rem; /* ფონტის ზომა */
-    transition: border-color 0.3s ease; /* საზღვრების ფერის გადასვლის ეფექტი */
+    padding: 12px 15px; 
+    margin: 10px 0; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    font-size: 1rem; 
+    transition: border-color 0.3s ease; 
 }
 
 /* სტილები ტექსტური ველებისათვის ფოკუსირების დროს */
 .contact-form input[type="text"]:focus,
 .contact-form input[type="email"]:focus,
 .contact-form textarea:focus {
-    border-color: #2a5298; /* საზღვრების ფერი ფოკუსირების დროს */
+    border-color: #2a5298; 
 }
 
 /* სტილები კონტაქტის ფორმის ღილაკისთვის */
 .contact-form button {
-    padding: 15px 0; /* ვერტიკალური padding */
-    margin: 20px 0; /* ზედა და ქვედა მარგინი */
-    background: linear-gradient(135deg, #6C63FF, #3F3D56); /* გრადენტული ფონური ფერი */
-    border: none; /* საზღვრის გარეშე */
-    color: #fff; /* ტექსტის ფერი */
-    font-size: 1rem; /* ფონტის ზომა */
-    font-weight: 700; /* მსხვილი ფონტის წონა */
-    border-radius: 8px; /* კუთხეების რბილი რადიუსი */
+    padding: 15px 0; 
+    margin: 20px 0; 
+    background: linear-gradient(135deg, #6C63FF, #3F3D56); 
+    border: none; 
+    color: #fff; 
+    font-size: 1rem; 
+    font-weight: 700; 
+    border-radius: 8px; 
     cursor: pointer; /* მაუსის კურსორი ღილაკზე */
     transition: 0.3s ease, transform 0.3s ease; /* გადასვლის და ტრანსფორმაციის ეფექტი */
 }
@@ -162,7 +162,7 @@ h1, h2, h3, h4 {
 
 /* სტილები ფუტურისთვის */
 footer {
-    background: #2a5298; /* ფონური ფერი */
-    color: #fff; /* ტექსტის ფერი */
+    background: #2a5298; 
+    color: #fff; 
     text-align: center
 }
